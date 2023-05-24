@@ -1,0 +1,52 @@
+[
+	{
+		"id":  0,
+		"titol": "Oporto",
+		"transport": "bus.png",
+		"imatge": "oportugal.png",
+		"durada": "18",
+		"inici": "Peso da Régua",
+		"final": "Vila Nova de Gaia",
+		"punts": [ "Santa Cruz do Douro", "Cinfães", "Alpendurada e Matos", "Santa Maria da Feira" ]
+	},
+	{
+		"id": 1,
+		"titol": "Caracas",
+		"transport": "tren.png",
+		"imatge": "caracas.png",
+		"durada": "17",
+		"inici": "Barquisimeto",
+		"final": "Caracas",
+		"punts": [ "Valencia", "Maracay", "Parroquia La Dolorita" ]
+	},
+	{
+		"id": 2,
+		"titol": "Pontevedra",
+		"transport": "avio.png",
+		"imatge": "pontevedra.png",
+		"durada": "7",
+		"inici": "Ourense",
+		"final": "Pontevedra",
+		"punts": [ "Mugares", "Prado de Miño", "Fornelos de Montes", "Real Basílica de Santa María la Mayor" ]
+	},
+	{
+		"id": 3,
+		"titol": "Sidney",
+		"transport": "bus.png",
+		"imatge": "sidney.png",
+		"durada": "2",
+		"inici": "Katoomba",
+		"final": "Sidney",
+		"punts": [ "Reserva de cangurs", "Glenbrook", "Opera de Sidney", "Casa del Hugh Jackman" ]
+	},
+	{
+		"id": 4,
+		"titol": "Santa Coloma de Gramanet",
+		"transport": "avio.png",
+		"imatge": "santacoloma.png",
+		"durada": "18",
+		"inici": "Can Zam",
+		"final": "Parc del Molinet",
+		"punts": [ "Comissaria dels Mossos", "Centre Obert Rialles", "Església Major de Santa Coloma de Gramanet", "Casa del Hugh Jackman" ]
+	}
+]

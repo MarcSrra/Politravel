@@ -1,0 +1,42 @@
+[
+	{
+		"nom": "Caracas",
+		"imatge": "caracas.png"
+	},
+	{
+		"nom": "Chicago",
+		"imatge": "chicago.png"
+	},
+	{
+		"nom": "Honolulu",
+		"imatge": "honolulu.png"
+	},
+	{
+		"nom": "Kuala Lumpur",
+		"imatge": "kualalumpur.png"
+	},
+	{
+		"nom": "Oporto",
+		"imatge": "oportugal.png"
+	},
+	{
+		"nom": "Pontevedra",
+		"imatge": "pontevedra.png"
+	},
+	{
+		"nom": "Santa Coloma de Gramanet",
+		"imatge": "santacoloma.png"
+	},
+	{
+		"nom": "Sidney",
+		"imatge": "sidney.png"
+	},
+	{
+		"nom": "Tokyo",
+		"imatge": "tokyo.png"
+	},
+	{
+		"nom": "Trollhättan",
+		"imatge": "trollhattan.png"
+	}
+]
