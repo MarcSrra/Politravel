@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_edit"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardedit"
+            style="@style/cardstyle"
+            android:layout_marginBottom="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/traveleditimg"
+                    style="@style/imatgelist"
+                    android:src="@drawable/noimatge"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/rallagrisimgedit"
+                    style="@style/rallagris"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/traveleditimg" />
+
+                <Button
+                    android:id="@+id/botoimatgeedit"
+                    style="@style/botosimple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:text="@string/editar"
+                    app:layout_constraintBottom_toBottomOf="@id/traveleditimg"
+                    app:layout_constraintRight_toRightOf="@id/traveleditimg" />
+
+                <TextView
+                    android:id="@+id/titoledit"
+                    style="@style/subtitolviatge"
+                    android:text="@string/nompaquet"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/rallagrisimgedit" />
+
+                <EditText
+                    android:id="@+id/edittextnompaquet"
+                    style="@style/edittextstyle"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titoledit"/>
+
+                <TextView
+                    android:id="@+id/duradaedit"
+                    style="@style/subtitolviatge"
+                    android:text="@string/durada"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edittextnompaquet" />
+
+                <EditText
+                    android:id="@+id/edittextdurada"
+                    style="@style/edittextstyle"
+                    android:inputType="number"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/duradaedit"/>
+
+                <LinearLayout
+                    android:id="@+id/lineartransportedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edittextdurada">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/subtitolviatge"
+                            android:text="@string/tipustransport" />
+
+                        <Spinner
+                            android:id="@+id/spinneredit"
+                            style="@style/edittextstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/spinnerbackground" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imatgetransportedit"
+                        android:layout_width="62dp"
+                        android:layout_height="62dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/edittextbackground"
+                        android:padding="8dp"
+                        android:src="@drawable/vaixell"
+                        android:layout_gravity="bottom"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/rallagrisinfoedit"
+                    style="@style/rallagris"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineartransportedit" />
+
+                <TextView
+                    android:id="@+id/itinerariedit"
+                    style="@style/titolviatge"
+                    android:text="@string/itinerari"
+                    app:layout_constraintTop_toBottomOf="@id/rallagrisinfoedit"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/lineariniciedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/itinerariedit">
+
+                    <TextView
+                        style="@style/subtitolviatge"
+                        android:text="@string/inici" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/location"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/location"/>
+
+                        <EditText
+                            android:id="@+id/inicieditedit"
+                            style="@style/edittextstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edittextbackground"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearfinalciedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineariniciedit">
+
+                    <TextView
+                        style="@style/subtitolviatge"
+                        android:text="@string/finalstr" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/location"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/location"/>
+
+                        <EditText
+                            android:id="@+id/finaleditedit"
+                            style="@style/edittextstyle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edittextbackground" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardmapaedit"
+                    style="@style/cardstyle"
+                    app:layout_constraintTop_toBottomOf="@id/linearfinalciedit"
+                    app:layout_constraintLeft_toLeftOf="parent">
+
+                    <ImageView
+                        android:id="@+id/mapaedit"
+                        style="@style/imatgelist"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:src="@drawable/mapa"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/linearpuntsedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/cardmapaedit">
+
+                    <TextView
+                        style="@style/subtitolviatge"
+                        android:text="@string/llocsinteres" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+
+
+                        <EditText
+                            android:id="@+id/puntinteresedit"
+                            style="@style/edittextstyle"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/edittextbackground"
+                            android:layout_gravity="center_vertical"/>
+
+                        <ImageButton
+                            android:id="@+id/buttonafegir"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:backgroundTint="@null"
+                            android:background="@drawable/buttonpetitet"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/listedit"
+                    style="@style/list"
+                    app:layout_constraintTop_toBottomOf="@id/linearpuntsedit"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+                <Button
+                    android:id="@+id/botoafegiredit"
+                    style="@style/botosimple"
+                    app:layout_constraintTop_toBottomOf="@id/listedit"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="@string/crear"
+                    android:layout_marginVertical="24dp"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contrainttoolbar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardModulActualJustificantAlumne"
+        style="@style/cardstyle"
+        android:layout_marginHorizontal="0dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintItemList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="100dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/edittextbackground">
+
+
+            <ImageView
+                android:id="@+id/imgitem"
+                style="@style/imatgelist"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <TextView
+                android:id="@+id/rallagrisimgitem"
+                style="@style/rallagris"
+                app:layout_constraintTop_toBottomOf="@id/imgitem"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginHorizontal="2dp"
+                android:background="@color/primaryDarkColor"
+                />
+
+            <TextView
+                android:id="@+id/imgnomitem"
+                app:layout_constraintTop_toBottomOf="@id/rallagrisimgitem"
+                app:layout_constraintLeft_toLeftOf="parent"
+                style="@style/text"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

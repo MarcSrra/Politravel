@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Politravel</string>
+    <string name="itinerari">Itinerari</string>
+    <string name="inici">Inici</string>
+    <string name="finalstr">Final</string>
+    <string name="llocsinteres">Llocs d\'interès</string>
+    <string name="reservar">Reservar</string>
+    <string name="crear">Crear</string>
+    <string name="editar">Editar</string>
+    <string name="nompaquet">Nom del paquet</string>
+    <string name="tipustransport">Tipus de transport</string>
+    <string name="transport">Transport</string>
+    <string name="durada">Durada</string>
+    <string name="guardar">Guardar</string>
+</resources>

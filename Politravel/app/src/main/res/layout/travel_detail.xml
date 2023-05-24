@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/carddetail"
+                style="@style/cardstyle"
+                android:layout_marginBottom="20dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/travelitemimg"
+                        style="@style/imatgelist"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:src="@drawable/noimatge"/>
+
+                    <TextView
+                        android:id="@+id/rallagrisimgdetail"
+                        style="@style/rallagris"
+                        app:layout_constraintTop_toBottomOf="@id/travelitemimg"
+                        app:layout_constraintLeft_toLeftOf="parent"/>
+
+                    <ImageView
+                        android:id="@+id/transportdetail"
+                        style="@style/imatgetransport"
+                        app:layout_constraintTop_toBottomOf="@id/rallagrisimgdetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:src="@drawable/avio"/>
+
+                    <TextView
+                        android:id="@+id/titoldetail"
+                        style="@style/titolviatge"
+                        app:layout_constraintLeft_toRightOf="@id/transportdetail"
+                        app:layout_constraintTop_toBottomOf="@id/rallagrisimgdetail"
+                        android:text="Macacu"/>
+
+                    <TextView
+                        android:id="@+id/duradadetail"
+                        style="@style/subtitolviatge"
+                        app:layout_constraintTop_toBottomOf="@id/transportdetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:text="15 dies"/>
+
+                    <TextView
+                        android:id="@+id/rallagristitoldetail"
+                        style="@style/rallagris"
+                        app:layout_constraintTop_toBottomOf="@id/duradadetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/itineraridetail"
+                        style="@style/titolviatge"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/rallagristitoldetail"
+                        android:text="@string/itinerari"/>
+
+                    <TextView
+                        android:id="@+id/inicidetail"
+                        style="@style/subtitolviatge"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/itineraridetail"
+                        android:text="@string/inici"/>
+
+                    <ImageView
+                        android:id="@+id/iniciicondetail"
+                        style="@style/location"
+                        app:layout_constraintTop_toBottomOf="@id/inicidetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/location"/>
+
+                    <TextView
+                        android:id="@+id/llocinicidetail"
+                        style="@style/text"
+                        app:layout_constraintTop_toBottomOf="@id/inicidetail"
+                        app:layout_constraintLeft_toRightOf="@id/iniciicondetail"
+                        android:text="Lloc d'inici"/>
+
+                    <TextView
+                        android:id="@+id/finaldetail"
+                        style="@style/subtitolviatge"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/iniciicondetail"
+                        android:text="@string/finalstr"/>
+
+                    <ImageView
+                        android:id="@+id/finalicondetail"
+                        style="@style/location"
+                        app:layout_constraintTop_toBottomOf="@id/finaldetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/location"/>
+
+                    <TextView
+                        android:id="@+id/llocfinaldetail"
+                        style="@style/text"
+                        app:layout_constraintTop_toBottomOf="@id/finaldetail"
+                        app:layout_constraintLeft_toRightOf="@id/finalicondetail"
+                        android:text="Lloc final"/>
+
+                    <TextView
+                        android:id="@+id/interesdetail"
+                        style="@style/subtitolviatge"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/finalicondetail"
+                        android:layout_marginTop="17dp"
+                        android:text="@string/llocsinteres"/>
+
+                    <ListView
+                        android:id="@+id/listdetail"
+                        style="@style/list"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/interesdetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardmapadetail"
+                        style="@style/cardstyle"
+                        app:layout_constraintTop_toBottomOf="@id/listdetail"
+                        app:layout_constraintLeft_toLeftOf="parent">
+
+                        <ImageView
+                            android:id="@+id/mapadetail"
+                            style="@style/imatgelist"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            android:src="@drawable/mapa"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <Button
+                        android:id="@+id/botoreservadetail"
+                        style="@style/botosimple"
+                        app:layout_constraintTop_toBottomOf="@id/cardmapadetail"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:text="@string/reservar"
+                        android:layout_marginVertical="24dp"
+                        />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+</LinearLayout>
