@@ -1,3 +1,3 @@
 # Politravel
 
-Add files folder into the aplication's folder
+Add files folder inside the aplication's folder
